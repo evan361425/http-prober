@@ -1,0 +1,16 @@
+services:
+  prober:
+    build: ../
+    environment:
+      PROBER_HTTP_SCHEME: https
+      PROBER_HTTP_HOST: quic.aiortc.org
+      PROBER_HTTP_PORT: 443
+      PROBER_HTTP_PATH: /httpbin/ip
+      PROBER_HTTP_METHOD: GET
+      PROBER_HTTP_HEADERS:
+      PROBER_HTTP_TIMEOUT:
+      PROBER_DNS_TTL: 0
+      PROBER_HTTP_BODY:
+      PROBER_RESPONSE_IS_TIMING:
+      PROBER_DURATION:
+      PROBER_RATE:
